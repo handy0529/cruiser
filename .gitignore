@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+app/libs/
+app/src/androidTest/java/com/jacksen/
+.gradle
+.idea
+
+.gradle/
+.idea/
+build/
+app/build/
+app/app.iml
