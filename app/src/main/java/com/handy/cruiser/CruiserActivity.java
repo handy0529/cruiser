@@ -16,7 +16,7 @@ import com.handy.cruiser.drawer.drawer1.FirstDemoActivity;
 import com.handy.cruiser.drawer.drawer2.SecondDemoActivity;
 import com.handy.cruiser.drawer.drawer3.ThirdDemoActivity;
 /**
- *   cruiser 
+ *   cruiser 201607 
  */
 public class CruiserActivity extends Activity implements View.OnClickListener {
 
