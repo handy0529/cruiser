@@ -15,7 +15,9 @@ import android.widget.Button;
 import com.handy.cruiser.drawer.drawer1.FirstDemoActivity;
 import com.handy.cruiser.drawer.drawer2.SecondDemoActivity;
 import com.handy.cruiser.drawer.drawer3.ThirdDemoActivity;
-
+/**
+ *   cruiser 
+ */
 public class CruiserActivity extends Activity implements View.OnClickListener {
 
     private Button btn1, btn2, btn3;
