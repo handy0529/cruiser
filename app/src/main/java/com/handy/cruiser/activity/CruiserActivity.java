@@ -1,17 +1,14 @@
-package com.handy.cruiser;
+package com.handy.cruiser.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.handy.cruiser.R;
 import com.handy.cruiser.drawer.drawer1.FirstDemoActivity;
 import com.handy.cruiser.drawer.drawer2.SecondDemoActivity;
 import com.handy.cruiser.drawer.drawer3.ThirdDemoActivity;
