@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.handy.cruiser">
+    <!-- 监听电话状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- 在SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 刻入声音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:allowBackup="true"
@@ -9,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.handy.cruiser.CruiserActivity"
+            android:name=".activity.CruiserActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -18,9 +29,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name="com.handy.cruiser.phone.PhoneService"></service>
+        <receiver android:name="com.handy.cruiser.phone.PhoneBroadcastReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/> <!-- 开机启动广播  -->
+            </intent-filter>
+        </receiver>
 
-
-    <activity android:name="com.handy.cruiser.drawer.drawer1.FirstDemoActivity"></activity>
+        <activity android:name="com.handy.cruiser.drawer.drawer1.FirstDemoActivity"></activity>
     <activity android:name="com.handy.cruiser.drawer.drawer2.SecondDemoActivity"></activity>
     <activity android:name="com.handy.cruiser.drawer.drawer3.ThirdDemoActivity"></activity>
     </application>
