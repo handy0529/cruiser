@@ -41,6 +41,7 @@ public class CompareUtils {
 
         for (int i = 0; i < bListCount; i++) {
             for (int j = 0; j < aListCount; j++) {
+
                 CornerMarkResult.CornerMarkItem bListInfo = bList.get(i);
                 CornerMarkResult.CornerMarkItem aListInfo = aList.get(j);
 //                if (!CheckUtils.isEmpty(aListInfo.biz) && !CheckUtils.isEmpty(bListInfo.biz) && bListInfo.biz.equals(aListInfo.biz)) {
