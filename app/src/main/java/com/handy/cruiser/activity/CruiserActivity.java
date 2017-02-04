@@ -74,6 +74,7 @@ public class CruiserActivity extends Activity implements View.OnClickListener {
         Intent intent = new Intent();
         switch (v.getId()) {
             case R.id.btn1:
+
                 intent.setClass(CruiserActivity.this, FirstDemoActivity.class);
                 break;
             case R.id.btn2:
