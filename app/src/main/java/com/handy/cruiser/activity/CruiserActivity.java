@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.handy.cruiser.R;
 import com.handy.cruiser.drawer.drawer1.FirstDemoActivity;
 import com.handy.cruiser.drawer.drawer2.SecondDemoActivity;
 import com.handy.cruiser.drawer.drawer3.ThirdDemoActivity;
@@ -74,7 +73,6 @@ public class CruiserActivity extends Activity implements View.OnClickListener {
         Intent intent = new Intent();
         switch (v.getId()) {
             case R.id.btn1:
-
                 intent.setClass(CruiserActivity.this, FirstDemoActivity.class);
                 break;
             case R.id.btn2:
